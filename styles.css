@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: norse-bold;
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.banner {
+  min-width: 40%;
+  height: 100vh;
+  background-image: url("./img/banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-text {
+  font-size: 5rem;
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: #ccc;
+  font-family: norse-bold;
+}
+
+.banner-text img {
+  width: 5rem;
+  height: auto;
+  margin-right: 0.6rem;
+}
+
+.form-container {
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.form-header {
+  font-family: Roboto, sans-serif;
+  margin: auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.form-header h3 {
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.form-header p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: white;
+
+  font-family: Roboto, sans-serif;
+}
+
+form p {
+  padding-inline: 40px;
+  padding-block: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+}
+
+.input-container div {
+  width: 35%;
+  margin-bottom: 20px;
+  label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #424242;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+.input-container div:nth-child(odd) {
+  margin-right: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 2px 5px;
+  width: 100%;
+}
+
+.btn {
+  background-color: #eeeeee;
+  padding: 20px 40px;
+}
+
+.btn button {
+  color: white;
+  background-color: #fc8f54;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+.login {
+  padding-inline: 40px;
+  font-family: Roboto, sans-serif;
+
+  span {
+    font-style: oblique;
+    font-weight: bold;
+  }
+}
